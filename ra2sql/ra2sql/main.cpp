@@ -1,5 +1,6 @@
 #include "main.h"
 #include "util.h"
+#include "command.h"
 #include <stdlib.h>
 #include <iostream>
 
@@ -15,8 +16,9 @@ namespace R2S {
 	void print_usage(FILE *out)
 	{
 		print_version(out);
-		fputs("\nUsage:\nInput the relational algebra", out);
-		
+		fputs("Global options:\n" 
+			"	-f, file" 
+			"	file ", out);
 	}
 
 	static void init_random()
@@ -44,5 +46,7 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 		
-
+	Command com(&args);
+	com.run();
+	return 0;
 }

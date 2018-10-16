@@ -21,12 +21,27 @@
     <ClCompile Include="util.cc">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="command.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\DELL\Desktop\jsoncpp-master\dist\jsoncpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\DELL\Desktop\jsoncpp-master\dist\json\json.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\DELL\Desktop\jsoncpp-master\dist\json\json-forwards.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
