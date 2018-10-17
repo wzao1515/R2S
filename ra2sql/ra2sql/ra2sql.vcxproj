@@ -75,6 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\c_c++\R2S\ra2sql\ra2sql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -111,16 +112,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\DELL\Desktop\jsoncpp-master\dist\jsoncpp.cpp" />
     <ClCompile Include="command.cc" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="include\jsoncpp.cpp" />
+    <ClCompile Include="main.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\c_c++\R2S\ra2sql\ra2sql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="util.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\DELL\Desktop\jsoncpp-master\dist\json\json-forwards.h" />
-    <ClInclude Include="C:\Users\DELL\Desktop\jsoncpp-master\dist\json\json.h" />
     <ClInclude Include="command.h" />
+    <ClInclude Include="include\json\json-forwards.h" />
+    <ClInclude Include="include\json\json.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="scanner.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

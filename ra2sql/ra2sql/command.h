@@ -2,6 +2,7 @@
 #define R2S_COMMAND_H
 #include <vector>
 #include <iostream>
+#include <fstream>
 #include "main.h"
 
 using namespace std;
@@ -17,11 +18,15 @@ namespace R2S {
 		virtual ~Command() {}
 
 		bool parse_command();
+
+		string read_file(string dir);
 		
 		void run();
 
 	private:
 		vector<string> commands;
+		string RA;
+
 	protected:
 		
 		

@@ -48,5 +48,6 @@ int main(int argc, char *argv[])
 		
 	Command com(&args);
 	com.run();
+	system("pause");
 	return 0;
 }

@@ -16,12 +16,37 @@ namespace R2S {
 		return false;
 	}
 
+	string Command::read_file(string dir)
+	{
+		string ra = "";
+		char temp[256];
+
+		ifstream in(dir);
+		if (in.is_open()) {
+			while (!in.eof()) {
+				in.getline(temp, 100);
+				ra += temp;
+			}
+		}
+		else {
+			print_usage(stderr);
+			exit(1);
+		}
+		return ra;
+	}
+
 	void Command::run() 
 	{
+		/*judge if the arguments are right*/
 		if (parse_command() == false) {
 			print_usage(stderr);
 			return;
 		}
+
+		/*read file and get the string*/
+		RA = read_file(commands[1]);
+		//cout << RA << endl;
+
 
 	}
 }
