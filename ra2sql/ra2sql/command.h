@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include "main.h"
+#include "scanner.h"
 
 using namespace std;
 

@@ -117,6 +117,7 @@
     <ClCompile Include="main.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\c_c++\R2S\ra2sql\ra2sql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="Scanner.cc" />
     <ClCompile Include="util.cc" />
   </ItemGroup>
   <ItemGroup>

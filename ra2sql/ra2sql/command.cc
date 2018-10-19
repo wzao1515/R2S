@@ -1,5 +1,6 @@
 #include "command.h"
 
+
 namespace R2S {
 
 	bool Command::parse_command()
@@ -47,6 +48,7 @@ namespace R2S {
 		RA = read_file(commands[1]);
 		//cout << RA << endl;
 
-
+		Scanner sc(RA);
+		
 	}
 }

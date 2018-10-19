@@ -27,6 +27,9 @@
     <ClCompile Include="include\jsoncpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Scanner.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
