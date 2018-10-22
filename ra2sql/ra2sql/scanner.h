@@ -16,9 +16,12 @@ namespace R2S {
 
 		void init_map();
 
+		Json::Value generate_child(int*);
+
 
 	private:
 		string RA;
+		vector<string> splited_RA;
 
 		/*json class used to write json file*/
 		Json::Value root;
