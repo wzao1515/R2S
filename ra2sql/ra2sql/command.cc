@@ -41,7 +41,7 @@ namespace R2S {
 		/*judge if the arguments are right*/
 		if (parse_command() == false) {
 			print_usage(stderr);
-			return;
+			exit(1);
 		}
 
 		/*read file and get the string*/
@@ -49,6 +49,7 @@ namespace R2S {
 		//cout << RA << endl;
 
 		Scanner sc(RA);
-		
+		sc.init_map();
+		sc.parse();
 	}
 }

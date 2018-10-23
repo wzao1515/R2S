@@ -1,8 +1,4 @@
 #include "util.h"
-#include <stdint.h>
-#include <iostream>
-#include <random>
-
 namespace R2S {
 	void good_random(void *out, size_t out_len)
 	{
