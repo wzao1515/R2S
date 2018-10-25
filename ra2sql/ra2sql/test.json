@@ -1,4 +1,10 @@
 {
    "RA_unit" : "RA",
-   "child" : [ null ]
+   "child" : [
+      {
+         "condition" : [ "sname", "sid" ],
+         "inst" : "project",
+         "table" : "Saliors"
+      }
+   ]
 }

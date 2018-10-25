@@ -60,19 +60,21 @@ namespace R2S {
 		}
 		Json::Value *node=new Json::Value;
 		std::string comm = (*it).first;
+		cout << comm << endl;
 
 		(*node)["inst"] = comm;
 
 		if (comm == "project" || comm == "select") {
 			exec_proj_or_sele(node, index);
 		}
-		
+		return *node;
 	}
 
 	FILE *Scanner::parse() {
 		init_map();
 		root["RA_unit"] = "RA";
 		auto *current = &root;
+		
 
 		split(RA, ' ', splited_RA);
 		for (auto i = 0; i < splited_RA.size(); i++) {
